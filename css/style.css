@@ -4,10 +4,7 @@
   font-family: "はんなり明朝";
   src: url("https://cdn.leafscape.be/hannari/hannari_web.woff2") format("woff2");
 }
-@font-face {
-  font-family: "はんなり明朝2";
-  src: url("fonts/HannariMincho-Regular.woff") format("woff");
-}
+
 html {
   font-size: 10px;
 }
