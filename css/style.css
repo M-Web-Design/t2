@@ -339,9 +339,9 @@ img {
   }
   #header #nav .h_logo {
     position: relative;
-    top: 5vw;
+    top: 1vw;
     left: 5vw;
-    width: 30vw;
+    width: 20vw;
     filter: brightness(0) invert(1);
     transition: 0.5s;
   }
@@ -830,10 +830,9 @@ img {
 }
 @media screen and (max-width: 1000px) {
   #contents .mv .v2 {
-    top: 92.5333333333vw;
-    left: 0;
-    width: 25.8666666667vw;
-    height: 14.6666666667vw;
+    top: 57vw;
+    left: 7vw;
+    width: 40vw;
     transform: none;
   }
 }
@@ -2144,3 +2143,23 @@ img {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* 預設狀態 */
+#header {
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+
+/* 滾動或點擊漢堡選單後的背景樣式 */
+#header.scrolled {
+  background-color: #fff; /* 或其他顏色 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 可選，增加陰影效果 */
+}
+
+/* 僅在手機版時啟用相關樣式 */
+@media (min-width: 768px) {
+  #header.scrolled {
+    background-color: transparent; /* 桌面版保持透明 */
+    box-shadow: none;
+  }
+}
